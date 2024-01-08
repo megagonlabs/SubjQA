@@ -20,10 +20,10 @@ All files are in standard _csv_ format, and they consist of the following column
 * ```review```: The review (that mentions the neighboring opinion).
 * ```human_ans_spans```: The span labeled by annotators as the answer.
 * ```human_ans_indices```: The (character-level) start and end indices of the answer span highlighted by annotators.
-* ```question_subj_level```: The subjectiviy level of the question (on a 1 to 5 scale with 1 being the most subjective).
+* ```question_subj_level```: The subjectivity level of the question (on a 1 to 5 scale with 1 being the most subjective).
 * ```ques_subj_score```: The subjectivity score of the question computed using the [TextBlob](https://textblob.readthedocs.io/en/dev/) package. 
 * ```is_ques_subjective```: A boolean subjectivity label derived from ```question_subj_level``` (i.e., scores below 4 are considered as subjective)
-* ```answer_subj_level```: The subjectiviy level of the answer span (on a 1 to 5 scale with 5 being the most subjective).
+* ```answer_subj_level```: The subjectivity level of the answer span (on a 1 to 5 scale with 1 being the most subjective).
 * ```ans_subj_score```: The subjectivity score of the answer span computed usign the [TextBlob](https://textblob.readthedocs.io/en/dev/) package.
 * ```is_ans_subjective```: A boolean subjectivity label derived from ```answer_subj_level``` (i.e., scores below 4 are considered as subjective)
 * ```nn_mod```: The modifier of the neighboring opinion (which appears in the review).
